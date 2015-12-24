@@ -2,12 +2,13 @@
 
 ## Summary ##
 
-Provisioning Modules, also referred to as Product or Server Modules, allow you
-to create modules that allow for the provisioning and management of products &
-services in WHMCS.
+Provisioning Modules allow for the provisioning and management
+of products & services in WHMCS.
 
-The sample files here demonstrates how a provisioning module for WHMCS should
-be structured and exercises all supported functionality.
+Provisioning Modules are also referred to as Product or Server Modules.
+
+The sample files here show how to structure provisioning module for WHMCS.
+The samples also exercise all supported functionality.
 
 For more information, please refer to the documentation at:
 http://docs.whmcs.com/Provisioning_Module_Developer_Docs
@@ -28,16 +29,15 @@ The recommended structure of a provisioning module is as follows.
 
 ## Minimum Requirements ##
 
-For the latest WHMCS minimum system requirements, please refer to
+For the latest WHMCS System Requirements, please refer to
 http://docs.whmcs.com/System_Requirements
 
-We recommend your module follows the same minimum requirements wherever
-possible.
+We recommend your module follows the same requirements wherever possible.
 
 ## Tests ##
 
-We strongly encourage you to write unit tests for your work. Within this SDK we
-provide a sample unit test based upon the widely used PHPUnit.
+We encourage you to write unit tests for your work. Within this SDK,
+ we provide a sample unit test based upon the PHPUnit Testing Framework.
 
 ## Useful Resources
 * [Developer Resources](http://www.whmcs.com/developers/)
