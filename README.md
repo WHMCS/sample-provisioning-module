@@ -26,6 +26,11 @@ The recommended structure of a provisioning module is as follows.
   |  provisioningmodule.php
 ```
 
+It is to be noted that although the functions in the file "provisioningmodule.php" 
+are defined with double underscores "__" they should be changed to "_" in order
+to work properly. It is mandatory that the function "_ConfigOptions" has only
+one underscore for all other functions to work.
+
 ## Minimum Requirements ##
 
 For the latest WHMCS minimum system requirements, please refer to
