@@ -18,6 +18,11 @@
  * example file, the filename is "provisioningmodule" and therefore all
  * functions begin "provisioningmodule_".
  *
+ * It is to be noted that although the functions in this file are defined with 
+ * double underscores "__" they should be changed to "_" in order to work 
+ * properly. It is mandatory that the function "_ConfigOptions" has only one 
+ * underscore for all other functions to work.
+ * 
  * If your module or third party API does not support a given function, you
  * should not define that function within your module. Only the _ConfigOptions
  * function is required.
