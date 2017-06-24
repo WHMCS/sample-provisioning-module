@@ -24,10 +24,10 @@
  *
  * For more information, please refer to the online documentation.
  *
- * @see http://docs.whmcs.com/Provisioning_Module_Developer_Docs
+ * @see https://developers.whmcs.com/provisioning-modules/
  *
  * @copyright Copyright (c) WHMCS Limited 2015
- * @license http://www.whmcs.com/license/ WHMCS Eula
+ * @license https://www.whmcs.com/license/ WHMCS Eula
  */
 
 if (!defined("WHMCS")) {
@@ -45,7 +45,7 @@ if (!defined("WHMCS")) {
  * Values returned here are used to determine module related abilities and
  * settings.
  *
- * @see http://docs.whmcs.com/Provisioning_Module_Meta_Data_Parameters
+ * @see https://developers.whmcs.com/provisioning-modules/meta-data-params/
  *
  * @return array
  */
@@ -143,7 +143,7 @@ function provisioningmodule_ConfigOptions()
  *
  * @param array $params common module parameters
  *
- * @see http://docs.whmcs.com/Provisioning_Module_SDK_Parameters
+ * @see https://developers.whmcs.com/provisioning-modules/module-parameters/
  *
  * @return string "success" or an error message
  */
@@ -191,7 +191,7 @@ function provisioningmodule_CreateAccount(array $params)
  *
  * @param array $params common module parameters
  *
- * @see http://docs.whmcs.com/Provisioning_Module_SDK_Parameters
+ * @see https://developers.whmcs.com/provisioning-modules/module-parameters/
  *
  * @return string "success" or an error message
  */
@@ -225,7 +225,7 @@ function provisioningmodule_SuspendAccount(array $params)
  *
  * @param array $params common module parameters
  *
- * @see http://docs.whmcs.com/Provisioning_Module_SDK_Parameters
+ * @see https://developers.whmcs.com/provisioning-modules/module-parameters/
  *
  * @return string "success" or an error message
  */
@@ -258,7 +258,7 @@ function provisioningmodule_UnsuspendAccount(array $params)
  *
  * @param array $params common module parameters
  *
- * @see http://docs.whmcs.com/Provisioning_Module_SDK_Parameters
+ * @see https://developers.whmcs.com/provisioning-modules/module-parameters/
  *
  * @return string "success" or an error message
  */
@@ -295,7 +295,7 @@ function provisioningmodule_TerminateAccount(array $params)
  *
  * @param array $params common module parameters
  *
- * @see http://docs.whmcs.com/Provisioning_Module_SDK_Parameters
+ * @see https://developers.whmcs.com/provisioning-modules/module-parameters/
  *
  * @return string "success" or an error message
  */
@@ -341,7 +341,7 @@ function provisioningmodule_ChangePassword(array $params)
  *
  * @param array $params common module parameters
  *
- * @see http://docs.whmcs.com/Provisioning_Module_SDK_Parameters
+ * @see https://developers.whmcs.com/provisioning-modules/module-parameters/
  *
  * @return string "success" or an error message
  */
@@ -389,7 +389,7 @@ function provisioningmodule_ChangePackage(array $params)
  *
  * @param array $params common module parameters
  *
- * @see http://docs.whmcs.com/Provisioning_Module_SDK_Parameters
+ * @see https://developers.whmcs.com/provisioning-modules/module-parameters/
  *
  * @return array
  */
@@ -467,7 +467,7 @@ function provisioningmodule_ClientAreaCustomButtonArray()
  *
  * @param array $params common module parameters
  *
- * @see http://docs.whmcs.com/Provisioning_Module_SDK_Parameters
+ * @see https://developers.whmcs.com/provisioning-modules/module-parameters/
  * @see provisioningmodule_AdminCustomButtonArray()
  *
  * @return string "success" or an error message
@@ -503,7 +503,7 @@ function provisioningmodule_buttonOneFunction(array $params)
  *
  * @param array $params common module parameters
  *
- * @see http://docs.whmcs.com/Provisioning_Module_SDK_Parameters
+ * @see https://developers.whmcs.com/provisioning-modules/module-parameters/
  * @see provisioningmodule_ClientAreaCustomButtonArray()
  *
  * @return string "success" or an error message
@@ -540,7 +540,7 @@ function provisioningmodule_actionOneFunction(array $params)
  *
  * @param array $params common module parameters
  *
- * @see http://docs.whmcs.com/Provisioning_Module_SDK_Parameters
+ * @see https://developers.whmcs.com/provisioning-modules/module-parameters/
  * @see provisioningmodule_AdminServicesTabFieldsSave()
  *
  * @return array
@@ -589,7 +589,7 @@ function provisioningmodule_AdminServicesTabFields(array $params)
  *
  * @param array $params common module parameters
  *
- * @see http://docs.whmcs.com/Provisioning_Module_SDK_Parameters
+ * @see https://developers.whmcs.com/provisioning-modules/module-parameters/
  * @see provisioningmodule_AdminServicesTabFields()
  */
 function provisioningmodule_AdminServicesTabFieldsSave(array $params)
@@ -632,7 +632,7 @@ function provisioningmodule_AdminServicesTabFieldsSave(array $params)
  *
  * @param array $params common module parameters
  *
- * @see http://docs.whmcs.com/Provisioning_Module_SDK_Parameters
+ * @see https://developers.whmcs.com/provisioning-modules/module-parameters/
  *
  * @return array
  */
@@ -677,7 +677,7 @@ function provisioningmodule_ServiceSingleSignOn(array $params)
  *
  * @param array $params common module parameters
  *
- * @see http://docs.whmcs.com/Provisioning_Module_SDK_Parameters
+ * @see https://developers.whmcs.com/provisioning-modules/module-parameters/
  *
  * @return array
  */
@@ -735,7 +735,7 @@ function provisioningmodule_AdminSingleSignOn(array $params)
  *
  * @param array $params common module parameters
  *
- * @see http://docs.whmcs.com/Provisioning_Module_SDK_Parameters
+ * @see https://developers.whmcs.com/provisioning-modules/module-parameters/
  *
  * @return array
  */

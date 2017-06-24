@@ -15,10 +15,10 @@
  * For every hook function you create, you must also register it with WHMCS.
  * There are two ways of registering hooks, both are demonstrated below.
  *
- * @see http://docs.whmcs.com/Hooks
+ * @see https://developers.whmcs.com/hooks/
  *
  * @copyright Copyright (c) WHMCS Limited 2015
- * @license http://www.whmcs.com/license/ WHMCS Eula
+ * @license https://www.whmcs.com/license/ WHMCS Eula
  */
 
 // Require any libraries needed for the module to function.
