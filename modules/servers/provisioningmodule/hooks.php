@@ -17,7 +17,7 @@
  *
  * @see https://developers.whmcs.com/hooks/
  *
- * @copyright Copyright (c) WHMCS Limited 2015
+ * @copyright Copyright (c) WHMCS Limited 2017
  * @license https://www.whmcs.com/license/ WHMCS Eula
  */
 

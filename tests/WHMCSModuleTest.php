@@ -11,7 +11,7 @@
  * recommend you implement further tests as appropriate for your module use
  * case.
  *
- * @copyright Copyright (c) WHMCS Limited 2015
+ * @copyright Copyright (c) WHMCS Limited 2017
  * @license http://www.whmcs.com/license/ WHMCS Eula
  */
 class WHMCSModuleTest extends PHPUnit_Framework_TestCase

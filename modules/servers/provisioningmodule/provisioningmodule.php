@@ -26,7 +26,7 @@
  *
  * @see https://developers.whmcs.com/provisioning-modules/
  *
- * @copyright Copyright (c) WHMCS Limited 2015
+ * @copyright Copyright (c) WHMCS Limited 2017
  * @license https://www.whmcs.com/license/ WHMCS Eula
  */
 
@@ -80,6 +80,8 @@ function provisioningmodule_MetaData()
  *
  * Examples of each and their possible configuration parameters are provided in
  * this sample function.
+ *
+ * @see https://developers.whmcs.com/provisioning-modules/config-options/
  *
  * @return array
  */
