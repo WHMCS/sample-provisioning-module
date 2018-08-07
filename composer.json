@@ -1,6 +1,7 @@
 {
     "name": "whmcs/provisioning-module-sample",
     "description": "Sample Provisioning Module for WHMCS Billing Automation Platform",
+    "type": "whmcs-servers",
     "keywords": [
         "whmcs",
         "web host automation platform",
