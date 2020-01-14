@@ -1,0 +1,33 @@
+{
+    "schema": "1.0",
+    "type": "whmcs-servers",
+    "name": "sample-provisioning-module",
+    "license": "MIT",
+    "category": "provisioning",
+    "description": {
+        "name": "Sample Provisioning Module",
+        "tagline": "Provisioning Modules allow for the provisioning and management of products & services in WHMCS.",
+        "long": "The sample files here demonstrates how a provisioning module for WHMCS should be structured and exercises all supported functionality.",
+        "features": [
+            "Provide both client and admin facing user interfaces",
+            "Utilize hook functionality within WHMCS",
+            "Provide structure for module commands"
+        ]
+    },
+    "logo": {
+        "filename": "logo.png"
+    },
+    "support": {
+        "homepage": "https:\/\/www.whmcs.com\/", 
+        "learn_more": "https:\/\/www.whmcs.com\/tour", 
+        "email": "support@whmcs.com", 
+        "support_url": "https:\/\/support.whmcs.com\/",
+        "docs_url": "https:\/\/developers.whmcs.com\/provisioning-modules\/"
+    },
+    "authors": [
+        {
+            "name": "WHMCS",
+            "homepage": "https:\/\/www.whmcs.com\/"
+        }
+    ]
+}
