@@ -14,7 +14,7 @@
  * @copyright Copyright (c) WHMCS Limited 2017
  * @license http://www.whmcs.com/license/ WHMCS Eula
  */
-class WHMCSModuleTest extends PHPUnit_Framework_TestCase
+class WHMCSModuleTest extends \PHPUnit\Framework\TestCase
 {
     /** @var string $moduleName */
     protected $moduleName = 'provisioningmodule';
