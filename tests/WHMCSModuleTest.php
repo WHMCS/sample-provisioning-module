@@ -34,7 +34,7 @@ class WHMCSModuleTest extends \PHPUnit\Framework\TestCase
      *
      * @return array
      */
-    public function providerFunctionReturnTypes()
+    public function providerFunctionReturnTypes(): array
     {
         return array(
             'Config Options' => array('ConfigOptions', 'array'),
@@ -64,7 +64,7 @@ class WHMCSModuleTest extends \PHPUnit\Framework\TestCase
      *
      * @dataProvider providerFunctionReturnTypes
      */
-    public function testFunctionsReturnAppropriateDataType($function, $returnType)
+    public function testFunctionsReturnAppropriateDataType(string $function, string $returnType)
     {
         if (function_exists($this->moduleName . '_' . $function)) {
             $result = call_user_func($this->moduleName . '_' . $function, array());
