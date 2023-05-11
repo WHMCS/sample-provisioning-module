@@ -426,6 +426,69 @@ function provisioningmodule_Renew(array $params)
 }
 
 /**
+ * Daily import of the disk and bandwidth usage for accounts of a server.
+ *
+ * The data imported is then used to display the usage stats both within
+ * the client and admin areas of WHMCS. The data is also used in disk
+ * and bandwidth overage billing calculations if enabled for a product.
+ * 
+ * The UsageUpdate function runs via WHMCS Cron, for any active, enabled server.
+ * 
+ * Important: Runs per server not per product
+ *
+ * @param array $params common module parameters
+ *
+ * @see https://developers.whmcs.com/provisioning-modules/usage-update/
+ *
+ */
+function mymodule_UsageUpdate($params) {
+    $serverid = $params['serverid'];
+    $serverhostname = $params['serverhostname'];
+    $serverip = $params['serverip'];
+    $serverusername = $params['serverusername'];
+    $serverpassword = $params['serverpassword'];
+    $serveraccesshash = $params['serveraccesshash'];
+    $serversecure = $params['serversecure'];
+
+    // Run connection to retrieve usage for all domains/accounts on $serverid
+    // E.g.:
+    $results = [
+        [
+            'domain' => 'example1.com',
+            'diskusage' => 1100,
+            'disklimit' => 1000,
+            'bandwidth' => 2000,
+            'bwlimit' => 1500,
+        ],
+        [
+            'domain' => 'example2.com',
+            'diskusage' => 800,
+            'disklimit' => 1000,
+            'bandwidth' => 2500,
+            'bwlimit' => 1500,
+        ],
+    ];
+
+    // Now loop through results and update DB
+    foreach ($results AS $domain => $values) {
+        try {
+            \WHMCS\Database\Capsule::table('tblhosting')
+                ->where('server', $serverid)
+                ->where('domain', $values['domain'])
+                ->update([
+                    'diskusage' => $values['diskusage'],
+                    'disklimit' => $values['disklimit'],
+                    'bwusage' => $values['bandwidth'],
+                    'bwlimit' => $values['bwlimit'],
+                    'lastupdate' => Capsule::raw('now()'),
+                ]);
+        } catch (\Exception $e) {
+            // Handle any error which may occur
+        } 
+    }
+}
+
+/**
  * Test connection with the given server parameters.
  *
  * Allows an admin user to verify that an API connection can be
